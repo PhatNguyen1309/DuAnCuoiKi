@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop Nguyễn Tấn Phát</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Tấn_Phát-removebg-preview.png" >
+    <link rel="stylesheet" href="chitiet.css">
+</head>
+
+<body>
+    <a href="index.html"><img src="https://lh3.googleusercontent.com/nKMbfvP-YF19yj0cDGV7asc7Ro_30B79EX0Qgaw1WlULVylvHL_634Xbu_0jY2peGLzJOTjDV8YXwpmtw2ZvrVjArEhDza67=w1920-rw" width="100%" alt=""></a>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="Tấn_Phát-removebg-preview.png" alt="" width="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pc
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Máy tính bộ</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Màn hình gaming</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Linh kiện máy tính</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Phụ kiện</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Core</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Laptop
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sanpham_lt.html">Theo thương hiệu</a></li>
+                                <li><a class="dropdown-item" href="sanpham_lt.html">Theo cấu hình</a></li>
+                                <li><a class="dropdown-item" href="sanpham_lt.html">Theo giá</a></li>
+                                <li><a class="dropdown-item" href="sanpham_lt.html">Theo kích thước</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Game & Stream
+                        </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Bán phím gaming</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Tai nghe gaming</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Ghế gaming</a></li>
+                                <li><a class="dropdown-item" href="sanpham_pc.html">Thiết bị livestream</a></li>
+                            </ul>
+                    </li>
+                      <li class="nav-item">
+                        <button id="cart" class="giohang">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            Giỏ Hàng
+                        </button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Giỏ Hàng</h5>
+                                    <span class="close">&times;</span>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                        <span class="cart-price cart-header cart-column">Giá</span>
+                                        <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                                    </div>
+                                    <div class="cart-items">
+                                        
+                    
+                                    </div>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title">Tổng Cộng: </strong>
+                                        <span class="cart-total-price">0 VNĐ</span>
+                                    </div>
+                                </div>
+            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                                    <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>   
+    </header>
+    <div class="content">
+        <a style=" text-decoration: none;padding: 10px 20px;" href="index.html">Trang Chủ > MacBook Pro 2022 13 Inch Chip M2 8GB | 256GB SSD Chính Hãng (MNEH3, MNEP3)</a>
+        <div class="sanphamn">
+            <img id="anhchinh" class="img-prd" src="https://cdn2.cellphones.com.vn/x358,webp,q100/media/catalog/product/m/b/mbp-spacegray-select-202206.jpg" alt="">
+            <div class="thongtinanhchinh">
+                <h3 class="content-product-h3">Laptop Asus Gaming Rog Strix G15 G513IH HN015W</h3>
+                <div style="font-size: 25px;float: left;">1k</div>
+                <div style="font-size: 18px;float: left;">⭐⭐⭐⭐⭐</div>
+                <div style="font-size: 25px;float: left;padding-left:10px ;">|</div>
+                <div style="font-size: 18px;float: left;padding: 5px;">1.2k</div>
+                <div style="font-size: 18px;float: left;padding: 5px;color: rgb(139, 140, 141);">Đánh giá</div>
+                <div style="font-size: 25px;float: left;padding-left:10px ;">|</div>
+                <div style="font-size: 18px;float: left;padding: 5px;">4.1k</div>
+                <div style="font-size: 18px;float: left;padding: 5px;color: rgb(139, 140, 141);">Đã bán</div>
+                    <div class="content-product-deltals">
+                        <div class="price" style="font-size: 40px;color: red;margin-top: 40px;float: left;"><span class="money">28589000 đ</span></div>
+                    </div>
+                <div style="font-size: 25px;color: rgb(138, 138, 138);margin-top: 50px;float: left;margin-left: 15px;"><s>32000000 đ</s></div>
+                <div style="color: rgb(170, 170, 170);margin-top: 150px;margin-right: 350px;font-size: 20px;">Màu: </div>
+                <div class="mau" style="background: white;"></div>
+                <div class="mau" style="background: gray;"></div><br>
+                <div class="content-product">
+                    <div class="content-product-deltals">
+                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                    </div>    
+                </div>           
+            </div>
+        </div>      
+    </div>              
+    <footer>
+        <div class="footer-item">
+            <div class="social-footer">
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Liên Hệ Hỗ trợ</th>
+                        <th>Chính sách mua hàng</th>
+                        <th>Cộng đồng Tấn Phát</th>
+                        <th>Liên hệ</th>
+                    </tr>
+                    <tr>
+                        <td>Hỗ trợ mua hàng</td>
+                        <td>Điều kiện giao dịch chung</td>
+                        <td>Giới thiệu về Tấn Phát</td>
+                        <td>Hỗ trợ khách hàng</td>
+                    </tr>
+                    <tr>
+                      <td>Hướng dẫn mua online</td>
+                      <td>Chính sách bảo hành</td>
+                      <td>Hệ thống cửa hàng</td>
+                      <td><a href="#">tanphat13092003@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                      <td>Ưu đãi dành cho Doanh nghiệp</td>
+                      <td>Chính sách đổi trả</td>
+                      <td>Trung Tâm bảo Hành</td>
+                      <td>Liên hệ báo giá</td>
+                    </tr>
+                    <tr>
+                      <td>Chính sách trả góp</td>
+                      <td>Chính sách thanh toán</td>
+                      <td>Chính sách bảo mật</td>
+                      <td><a href="#">phatnguyen13092003@gmail.com</a></td>
+                    </tr>
+                </table>
+                <li><a target="_blank" href="https://www.facebook.com/phatnguyen.13092003">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a></li>
+                <li><a target="_blank" href="https://github.com/long1211">
+                        <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a></li>
+
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/currency.js@~2.0.0/dist/currency.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>

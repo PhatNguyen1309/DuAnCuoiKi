@@ -1,0 +1,29 @@
+.main{
+    width: 100%;
+}
+
+.avt{
+    border-radius: 50%;
+}
+
+.mid{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+} 
+
+.cuoi{
+    margin-bottom: 0;
+}
+
+@media screen and (Max-width:600px){
+    .giua{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto ;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'dau'
+        'than';
+    }
+}

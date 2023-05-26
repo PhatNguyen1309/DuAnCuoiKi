@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập</title>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="Tấn_Phát-removebg-preview.png" >
+</head>
+<body>
+  <img src="https://lh3.googleusercontent.com/nKMbfvP-YF19yj0cDGV7asc7Ro_30B79EX0Qgaw1WlULVylvHL_634Xbu_0jY2peGLzJOTjDV8YXwpmtw2ZvrVjArEhDza67=w1920-rw" width="100%" alt="">
+  <header>
+      <nav>
+          <div class="img-nav">
+              <img src="" alt="" />
+          </div>
+          <div class="content-nav">
+              <ul>
+                  <li><a href="index.html"><img src="Tấn_Phát-removebg-preview.png" width="40px" alt=""></a></li>
+                  <li><a href="index.html">Trang Chủ</a></li>
+                  <li><a href="sanpham.html">Sản Phẩm</a></li>
+                  <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                  <li><a href="DangNhap.html">Đăng Nhập</a></li>
+                  
+              </ul>
+          </div>
+          <button id="cart">
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+              Giỏ Hàng
+          </button>
+          <div id="myModal" class="modal">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Giỏ Hàng</h5>
+                      <span class="close">&times;</span>
+                  </div>
+                  <div class="modal-body">
+                      <div class="cart-row">
+                          <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                          <span class="cart-price cart-header cart-column">Giá</span>
+                          <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                      </div>
+                      <div class="cart-items">
+                          
+      
+                      </div>
+                      <div class="cart-total">
+                          <strong class="cart-total-title">Tổng Cộng: </strong>
+                          <span class="cart-total-price">0 VNĐ</span>
+                      </div>
+                  </div>
+
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                      <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                  </div>
+              </div>
+          </div>
+      </nav>
+
+  <div class="than">
+    <div class="container" id="container">
+      <div class="form-container register-container">
+        <form action="#">
+          <h1>Đăng kí</h1>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <button>Đăng kí</button>
+          <span>Hãy tạo tài khoản nào !</span>
+          <div class="social-container">
+            <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+            <a href="#" class="social"><i class="lni lni-google"></i></a>
+            <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+          </div>
+        </form>
+      </div>
+  
+      <div class="form-container login-container">
+        <form action="#">
+          <h1>Đăng Nhập</h1>
+          <input type="email" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <div class="content">
+            <div class="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox">
+              <label>Nhớ mật khẩu</label>
+            </div>
+            <div class="pass-link">
+              <a href="#">Quên mật khẩu ?</a>
+            </div>
+          </div>
+          <button>Đăng nhập</button>
+          <div class="social-container">
+            <a href="https://www.facebook.com/" class="social"><i class="lni lni-facebook-fill"><img src="facebook.png" alt="" width="40px"></i></a>
+            <a href="https://www.google.com/?gws_rd=ssl" class="social"><i class="lni lni-google"><img src="google.png" alt="" width="40px"></i></a>
+            <a href="https://www.instagram.com/" class="social"><i class="lni lni-linkedin-original"><img src="instagram.png" alt="" width="40px"></i></a>
+          </div>
+        </form>
+      </div>
+  
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1 class="title">Chào <br> Cậu</h1>
+            <p>Nếu có tài khoản gòi, thì đăng nhập nào :3</p>
+            <button class="ghost" id="login">Đăng nhập
+              <i class="lni lni-arrow-left login"></i>
+            </button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1 class="title">Bắt đầu <br> đăng nhập nào :3</h1>
+            <p>Nếu chưa có tài khoản thì đăng kí tại đây !!!</p>
+            <button class="ghost" id="register">Đăng kí
+              <i class="lni lni-arrow-right register"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="login.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

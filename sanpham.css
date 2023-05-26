@@ -1,0 +1,39 @@
+.mid{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'trai g';
+}
+
+.giua{
+    grid-area: g;
+}
+
+.left{
+    grid-area: trai;
+    padding: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .mid{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: auto;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: 
+        'trai'
+        'g';
+    }
+    
+    .giua{
+        grid-area: g;
+    }
+    
+    .left{
+        grid-area: trai;
+        padding: 20px;
+    }
+
+}
